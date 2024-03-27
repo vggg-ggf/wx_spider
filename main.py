@@ -4,8 +4,8 @@ import json
 from bs4 import BeautifulSoup
 
 
-Cookie = 'appmsglist_action_3918669669=card; pgv_info=ssid=s1278697672; pgv_pvid=7581807506; eas_sid=vCp2LJbKEbQiwRBTpynaIC86we; tokenParams=%3Fdevice%3Dandroid; aqtwqqcomrouteLine=index_proj0_index; ua_id=alEu5SFkKnW0k6uGAAAAAPJPU73yFeVeo8KCzctQlmw=; wxuin=11282624425233; mm_lang=zh_CN; rewardsn=; wxtokenkey=777; _clck=3918669669|1|fke|0; cert=aOoN7JebbUBKebwhQyB0vsVLfO_k7Hkl; sig=h01e17a98227df1c4fe827b08a1bce7b6a394d8efed5784bcde728cd0237f4766c6c85d2e1a4c056f7f; uuid=958bfa310e227c0542f8b5637a4a426b; rand_info=CAESIGYkauycGj0J+clej+S3opUFRDx1rLSqzVVDnIklG//W; slave_bizuin=3918669669; data_bizuin=3918669669; bizuin=3918669669; data_ticket=cMvs1EkPxkTPJC0rT4Up8vYrIYaqY0RgMgCwKTrJu0wdjG7qfSTHdlaR4amvfTwG; slave_sid=X1BIa3hHSlA5NkdGT1FFTXBNeGhVUExab2RfX3NBWVBua0o4OXNCV3VGU2dEMExqTkFoTjNZOVNqQzRxcWxGbFRmdVIwelQ1Y1ZHVHJEeHpqQkdwTkZzUzdsTFFpc3loZGxKMHdhQjhzY2ZSRTBhQkJ1OGYzaTRvVnVLbmptbllYNUgzUUVDTjdsNW5FWE5a; slave_user=gh_eaaa1c3c968c; xid=f7b320666ffef3bd6f6e1b0e5ed023c5; _clsk=186ceiv|1711431096697|12|1|mp.weixin.qq.com/weheat-agent/payload/record'
-token = '302339477'        
+Cookie = ''
+token = ''        
 keyword1='大专'
 keyword2='专科'
 keyword3='公卫'
