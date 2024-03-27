@@ -116,13 +116,34 @@ def check_link(link):
             return False
         else: return True
 
+def write_progress(progress):
+    with open('progress.txt', 'w',encoding='utf-8') as file:
+        file.write(progress)
+        file.close
+
+def find_index(progress_file, name_file):
+    with open(progress_file, 'r',encoding='utf-8') as f:
+        progress = f.readline().strip()
+
+    with open(name_file, 'r',encoding='utf-8') as f:
+        names = [line.strip() for line in f.readlines()]
+
+    try:
+        index = names.index(progress)
+    except ValueError:
+        index = -2
+
+    return index
 
 def start(key,Cookie,token,keyword1,keyword2,keyword3,keyword4,keyword5):
     try:
+        index=find_index('progress.txt','name.txt')
         with open('name.txt', 'r',encoding='utf-8') as file:  
-            names = file.readlines()  
-            for name in names:  
+            for _ in range(index):
+                file.readline()  
+            for name in file:  
                 print(f'开始爬取{name}的文章') 
+                write_progress(name)
                 links = getLinks(get_content(key,name.strip(),Cookie,token))
                 t=random.randint(45, 80)
                 print(f"随机等待{t}秒")
