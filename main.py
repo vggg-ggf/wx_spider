@@ -11,7 +11,7 @@ keyword2='专科'
 keyword3='公卫'
 keyword4='预防医学'
 
-key='84b0e0c1-fc64-40a7-a965-4004f17ed073'
+key=''
 
 def get_content(key,keyword,Cookie,token):
     url = "https://mp.weixin.qq.com/cgi-bin/appmsg"
